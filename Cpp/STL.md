@@ -27,4 +27,5 @@ iter->mem
 iter1 == iter2
 iter1 != iter2
 ```
+对象是常量则只能用const_iterator迭代，且begin和end
 **空容器的begin和end都是尾后迭代器(off-the-end iterator)**
