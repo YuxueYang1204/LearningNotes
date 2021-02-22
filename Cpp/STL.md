@@ -1,6 +1,6 @@
 # 标准模板库
 ## vector
-1. 初始化
+### 初始化
 ```C
 vector<T> vl
 vector<T> v2 (vl) //拷贝复制
@@ -15,6 +15,7 @@ vector<T> v5 = {a,b,c...)
 vector<string> v1{10}; // 构造出10个默认初始化的元素
 vector<string> v2{10, "hi"}; // 构造出10个值为"hi"的元素
 ```
-2.下标访问
+### 下标访问
 遍历时下标访问采用`vector<T>::size_type i`而不是int
-3.
+### 迭代器
+空容器的begin和end都是
