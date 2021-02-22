@@ -10,4 +10,7 @@ vector<T> v4 (n)
 vector<T> v5 {a,b,c... }
 vector<T> v5 = {a,b,c...)
 ```
-注：如果列表初始化中
+注：如果列表初始化中提供的值无法用来初始化，就要考虑用该值构造vector对象
+```C
+vector<string> v1{10};
+vector<string> v2{10, 'hi
