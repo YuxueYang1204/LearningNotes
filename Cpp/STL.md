@@ -12,5 +12,6 @@ vector<T> v5 = {a,b,c...)
 ```
 注：如果列表初始化中提供的值无法用来初始化，就要考虑用该值构造vector对象
 ```C
-vector<string> v1{10};
-vector<string> v2{10, 'hi
+vector<string> v1{10}; // 构造出10个默认初始化的元素
+vector<string> v2{10, "hi"}; // 构造出10个值为"hi"
+```
