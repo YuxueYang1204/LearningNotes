@@ -18,4 +18,4 @@ vector<string> v2{10, "hi"}; // 构造出10个值为"hi"的元素
 ### 下标访问
 遍历时下标访问采用`vector<T>::size_type i`而不是int
 ### 迭代器
-空容器的begin和end都是
+**空容器的begin和end都是尾后迭代器(off-the-end iterator)**
