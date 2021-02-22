@@ -10,3 +10,4 @@ vector<T> v4 (n)
 vector<T> v5 {a,b,c... }
 vector<T> v5 = {a,b,c...)
 ```
+注：如果列表初始化中
