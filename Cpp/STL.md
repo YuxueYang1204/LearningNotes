@@ -17,3 +17,4 @@ vector<string> v2{10, "hi"}; // 构造出10个值为"hi"的元素
 ```
 2.下标访问
 遍历时下标访问采用`vector<T>::size_type i`而不是int
+3.
