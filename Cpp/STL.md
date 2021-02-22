@@ -5,7 +5,8 @@
 vector<T> vl
 vector<T> v2 (vl) //拷贝复制
 vector<T> v2 = vl //拷贝复制
-vector<T> v3(n, val)
+vector<T> v3 (n, val) //n个val
 vector<T> v4 (n)
 vector<T>v5(a,b,c... }
 vector<T> v5={a,b,c...)
+```
