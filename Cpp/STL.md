@@ -185,6 +185,7 @@ sort(a.begin(), a.end()); // 将a元素从小到大排序
 ```
 **注：需满足元素间可比**
 #### `unique()`（定义在algorithm头文件中）
+
 ```C
-unique(a.begin(), a.end()); // 将a中的重复元素放在最后
+unique(a.begin(), a.end());
 ```
