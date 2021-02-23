@@ -185,7 +185,9 @@ sort(a.begin(), a.end()); // 将a元素从小到大排序
 ```
 **注：需满足元素间可比**
 #### `unique()`（定义在algorithm头文件中）
-
+将**相邻的**重复的元素放到容器的末尾，返回值是去重之后的尾地址
 ```C
-unique(a.begin(), a.end());
+vector<int> myvector = {10,20,20,20,30,30,20,20,10};
+auto it = unique (myvector.begin(), myvector.end()); // 10,20,30,20,10,?,?,?,?
+// it指向myvector[5]
 ```
