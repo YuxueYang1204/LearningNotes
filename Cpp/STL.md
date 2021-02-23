@@ -42,10 +42,16 @@ iter1 != iter2
 2. **空容器的begin和end都是尾后迭代器(off-the-end iterator)**
 3. **凡是使用了迭代器的循环体，都不要向迭代器所属的容器添加元素**
 ### 赋值
+所有容器均支持
 ```C
 c1 = c2; // 两者需要具有相同类型
-c1 = {a, b, c...}; // 
+c1 = {a, b, c...}; // 列表赋值（array不支持）
 ```
+除关联容器和array外均支持
+```C
+seq.assign(b,e);
+seq.assign(il);
+seq.assign(n,t); // 替换为
 ## array
 ### 初始化
 需指定元素类型和大小
