@@ -71,7 +71,9 @@ c.insert(p, n, t)  // 迭代器p之前插入n个t，返回第一个元素的迭�
 c.insert(p, b, e)  // 迭代器p之前插入b和e范围内的元素，b和e不能指向c中元素，返回第一个元素的迭代器
 c.inser(p, il)	   // 迭代器p之前插入元素值列表，返回第一个元素的迭代器
 ```
-**注：由于vector、string、deque添加元素会重新分配空间，所以迭代器、指针、引用将会失效**  
+**注：**
+1. **由于vector、string、deque添加元素会重新分配空间，所以迭代器、指针、引用将会失效**  
+2. **`emplace()、emplace_back()、emplace_front()`的原理是先调用构造函数，在容器管理的内存空间直接创建对象；而push**
 
 ---
 ## array
