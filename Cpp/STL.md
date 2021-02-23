@@ -137,12 +137,15 @@ int *ptr = find(begin(ia), end(ia), val); // 找到就返回指针，找不到�
 ```
 #### `equal()`（定义在algorithm头文件中）
 ```C
-int sum1 = accumulate(vec.cbegin(), vec.cend(), 0); // 第三个参数为初始值
-string sum2 = accumulate(s.cbegin(), s.cend(), string("")); // ""为const char*类型，不可加，需要构造string
+int myints[] = {20,40,60,80,100};
+vector<int>myvector (myints,myints+5)；
+equal(myvector.begin(), myvector.end(),myints)；
 ```
+**注：**
+1. **第三个参数表示序列首元素迭代器，需满足第二个序列长度大于等于第一序列**
 #### `accumulate()`（定义在numeric头文件中）
 ```C
 int sum1 = accumulate(vec.cbegin(), vec.cend(), 0); // 第三个参数为初始值
 string sum2 = accumulate(s.cbegin(), s.cend(), string("")); // ""为const char*类型，不可加，需要构造string
 ```
-求和需满足元素之间可加
+**注：求和需满足元素之间可加**
