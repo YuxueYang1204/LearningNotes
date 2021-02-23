@@ -156,7 +156,7 @@ string sum2 = accumulate(s.cbegin(), s.cend(), string("")); // ""为const char*�
 fill(vec.begin(), vec.begin() + vec.size()/2, 0); // 将序列前一半设为0
 ```
 #### `fill_n()`（定义在algorithm头文件中）
-fill_n(dest, n, val)从dest开始设置n个val
+`fill_n(dest, n, val)`从dest开始设置n个val
 ```C
 fill_n(vec.begin(), vec.size()/2, 0); //将序列前一半设为0
 ```
