@@ -49,7 +49,7 @@ c1 = {a, b, c...}; // 列表赋值（array不支持）
 ```
 除关联容器和array外均支持
 ```C
-seq.assign(b,e); // 替换为迭代器b，e间的元素
+seq.assign(b,e); // 替换为迭代器b，e间的元素，b和e不能指向seq中的元素
 seq.assign(il); // 替换为初始化列表il中的元素
 seq.assign(n,t); // 替换为n个t
 ```
@@ -67,7 +67,10 @@ swap(a, b);
 ```C
 c.insert(p, t) 	   // 在迭代器p之前插入t或由args创建的元素
 c.emplace(p, args) // 返回新添加元素的迭代器
-c.insert(p, n, t) // 
+c.insert(p, n, t)  // 迭代器p之前插入n个t，返回第一个元素的迭代器
+c.insert(p, b, e)  // 迭代器p之前插入b和e范围内的元素，b和e不能指向c中元素，返回第一个元素的迭代器
+
+```
 ---
 ## array
 ### 初始化
