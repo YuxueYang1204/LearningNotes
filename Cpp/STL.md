@@ -53,8 +53,10 @@ seq.assign(b,e); // 替换为迭代器b，e间的元素
 seq.assign(il); // 替换为初始化列表il中的元素
 seq.assign(n,t); // 替换为n个t
 ```
-assign
-注：赋值相关运算会导致左边容器的迭代器、引用和指针失效
+assign只需要类型能够相互转换即可，例如string->const char*  
+**注：赋值相关运算会导致左边容器的迭代器、引用和指针失效**
+### 交换
+
 ## array
 ### 初始化
 需指定元素类型和大小
@@ -69,3 +71,4 @@ d = {1}; // ❌错误，可以列表初始化但不能列表赋值
 1. Sequence
 2. Contiguous storage
 3. Fixed-size aggregate
+4. swap会真正交换元素，效率低
