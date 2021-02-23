@@ -182,7 +182,11 @@ replace(a.begin(), a.end(), 0, 42); // 将a中0换成42
 ```C
 replace_copy(a.cbegin(), a.cend(), b.begin(), 0, 42); // 将a中0换成42的序列存入b，a不变
 ```
-  
+#### `for_each()`（定义在algorithm头文件中）
+此算法第三个参数为可调用对象，且对序列每个元素调用该对象
+```C
+for_each(a.begin(), a.end(), [](
+```
 ---
 ### 重排容器算法
 #### `sort()`（定义在algorithm头文件中）
