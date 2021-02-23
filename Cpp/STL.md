@@ -133,4 +133,6 @@ c.erase_after(b,e) // 删除b和e范围内的元素，返回最后一个被删�
 ```C
 int ia[] = {27, 10, 29};
 int val = 10;
-int *ptr = find(ia.begin(), ia.end(),
+int *ptr = find(begin(ia), end(ia), val); // 找到就返回指针，找不到就返回end(ia)
+```
+#### `find()`
