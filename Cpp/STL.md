@@ -49,9 +49,12 @@ c1 = {a, b, c...}; // 列表赋值（array不支持）
 ```
 除关联容器和array外均支持
 ```C
-seq.assign(b,e);
-seq.assign(il);
-seq.assign(n,t); // 替换为
+seq.assign(b,e); // 替换为迭代器b，e间的元素
+seq.assign(il); // 替换为初始化列表il中的元素
+seq.assign(n,t); // 替换为n个t
+```
+assign
+注：赋值相关运算会导致左边容器的迭代器、引用和指针失效
 ## array
 ### 初始化
 需指定元素类型和大小
