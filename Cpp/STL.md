@@ -99,3 +99,6 @@ d = {1}; // ❌错误，可以列表初始化但不能列表赋值
 2. Contiguous storage
 3. Fixed-size aggregate
 4. swap会真正交换元素，效率低
+
+---
+## forward_list
