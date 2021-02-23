@@ -135,8 +135,8 @@ c.erase_after(b,e) // 删除b和e范围内的元素，返回最后一个被删�
 |`pair<T1, T2> p(v1, v2)`|用v1和v2为p.first和p.second初始化|
 |`pair<T1, T2> p{v1, v2}`|同上|
 |`make_pair(v1, v2)`|通过v1和v2初始化pair|
-|`p1 `*`relop`*` p2`|通过关系运算符（<,>,<=,>=)运算，p1.first *relop* p2.first或者<br>!(p1.first *relop* p2.first) && (p1.second *relop* p2.second)时返回True|
-
+|`p1 `*`relop`*` p2`|通过关系运算符（<,>,<=,>=)运算，`p1.first *relop* p2.first`或者<br>`!(p1.first *relop* p2.first) && (p1.second *relop* p2.second)`时返回True|
+|`p1 == p2`|first和second同时相等返回True|
 # 泛型算法
 ## 分类（常见算法举例）
 ### 只读算法
