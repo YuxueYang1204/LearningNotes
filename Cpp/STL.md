@@ -135,6 +135,12 @@ int ia[] = {27, 10, 29};
 int val = 10;
 int *ptr = find(begin(ia), end(ia), val); // 找到就返回指针，找不到就返回end(ia)
 ```
+#### `find_if()`（定义在algorithm头文件中）
+第三个参数为一元谓词，返回第一个使谓词非0的元素的迭代器
+```C
+vector<int> myvector = {1, 2, 3, 3, 4};
+auto iter = find_if(myvector.cbegin(), myvector.cend(), IsOdd);
+```
 #### `equal()`（定义在algorithm头文件中）
 ```C
 int myints[] = {20,40,60,80,100};
