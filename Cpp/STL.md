@@ -181,9 +181,9 @@ replace_copy(a.cbegin(), a.cend(), b.begin(), 0, 42); // 将a中0换成42的序�
 ### 重排容器算法
 #### `sort()`（定义在algorithm头文件中）
 ```C
-sort(a.begin(), a.end()); // 将a元素从小到大排序
+sort(a.begin(), a.end(), pred); // 将a元素从小到大排序
 ```
-**注：需满足元素间可比**
+**注：需满足元素间可比，pred则通过"<"比较，否则**
 #### `unique()`（定义在algorithm头文件中）
 将**相邻的**重复的元素放到容器的末尾，返回值是去重之后的尾地址
 ```C
