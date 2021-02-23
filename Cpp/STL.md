@@ -10,7 +10,7 @@ vector<T> v4 {a,b,c... }
 vector<T> v4 = {a,b,c...}
 // 以下两个视具体容器而定，只适用于顺序容器（不包括array）
 vector<T> v5 (n, val) // n个val
-vector<T> v6 (n) // 构造n个元素，调用默认构造函数（string不适用）
+vector<T> v6 (n) // 构造n个元素，调用默认构造函数
 ```
 **注：如果列表初始化中提供的值无法用来初始化，就要考虑用该值构造vector对象**
 ```C
@@ -41,3 +41,5 @@ iter1 != iter2
 1. **当不需要对数据进行更改时，应使用cbegin及cend**
 2. **空容器的begin和end都是尾后迭代器(off-the-end iterator)**
 3. **凡是使用了迭代器的循环体，都不要向迭代器所属的容器添加元素**
+## array
+### 初始化
