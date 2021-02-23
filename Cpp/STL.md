@@ -170,7 +170,12 @@ auto iter = copy(a.cbegin(), a.cend(), b.begin()); // 将a拷贝给b且返回第
 replace(a.begin(), a.end(), 0, 42); // 将a中0换成42
 ```
 #### `replace_copy()`（定义在algorithm头文件中）
-此算法接受额外第三个迭代器参数，指出调整后序列的保存位置：
+此算法接受额外第三个迭代器参数，指出调整后序列的保存位置
 ```C
-replace(a.begin(), a.end(), 0, 42); // 将a中0换成42
+replace_copy(a.cbegin(), a.cend(), b.begin(), 0, 42); // 将a中0换成42的序列存入b，a不变
+```
+### 重排容器算法
+#### `sort()`（定义在algorithm头文件中）
+```C
+sort(a.begin(), a.end()); // 将a变
 ```
