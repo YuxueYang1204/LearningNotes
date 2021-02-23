@@ -127,7 +127,7 @@ c.erase_after(p) // 删除迭代器p之后的元素，返回被删元素之后�
 c.erase_after(b,e) // 删除b和e范围内的元素，返回最后一个被删元素之后元素的迭代器
 ```
 # 泛型算法
-## 分类
+## 分类（常见算法举例）
 ### 只读算法
 #### `find()`（定义在algorithm头文件中）
 ```C
@@ -159,4 +159,8 @@ fill(vec.begin(), vec.begin() + vec.size()/2, 0); // 将序列前一半设为0
 `fill_n(dest, n, val)`从dest开始设置n个val
 ```C
 fill_n(vec.begin(), vec.size()/2, 0); //将序列前一半设为0
+```
+#### `copy()`（定义在algorithm头文件中）
+```C
+
 ```
