@@ -75,7 +75,7 @@ c.insert(p, il)	   // 迭代器p之前插入元素值列表，返回第一个元
 **注：**
 1. **由于vector、string、deque添加元素会重新分配空间，所以迭代器、指针、引用将会失效**  
 2. **`emplace()、emplace_back()、emplace_front()`的原理是先调用构造函数，在容器管理的内存空间直接创建对象；而`push()`是先创建局部临时对象，再压入容器**
-### 删除（不包括forward_list)
+### 删除(不包括forward_list)
 ```C
 c.pop_back()
 c.pop_front()
@@ -83,6 +83,11 @@ c.erase(p) // 删除迭代器p所指的元素，返回被删元素之后的元�
 c.erase(b,e) // 删除b和e范围内的元素，返回最后一个被删元素之后元素的迭代器
 c.clear() // 清空
 ```
+### 失效问题
+|column1|column2|column3|
+|-|-|-|
+|content1|content2|content3|
+
 ---
 ## array
 ### 初始化
