@@ -162,5 +162,9 @@ fill_n(vec.begin(), vec.size()/2, 0); //将序列前一半设为0
 ```
 #### `copy()`（定义在algorithm头文件中）
 ```C
-
+auto iter = copy(a.cbegin(), a.cend(), b.begin()); // 将a拷贝给b且返回第三个参数递增之后的值
+```
+#### `replace()`（定义在algorithm头文件中）
+```C
+auto iter = copy(a.cbegin(), a.cend(), b.begin()); // 将a拷贝给b且返回第三个参数递增之后的值
 ```
