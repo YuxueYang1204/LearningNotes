@@ -64,7 +64,7 @@ swap(a, b);
 **注：**
 1. **除string外，交换后原来a的迭代器、引用和指针会指向b**
 2. **string交换后迭代器、引用和指针失效**
-### 添加
+### 添加(不包括forward_list)
 ```C
 c.insert(p, t) 	   // 在迭代器p之前插入t或由args创建的元素
 c.emplace(p, args) // 返回新添加元素的迭代器
@@ -75,7 +75,7 @@ c.inser(p, il)	   // 迭代器p之前插入元素值列表，返回第一个元�
 **注：**
 1. **由于vector、string、deque添加元素会重新分配空间，所以迭代器、指针、引用将会失效**  
 2. **`emplace()、emplace_back()、emplace_front()`的原理是先调用构造函数，在容器管理的内存空间直接创建对象；而`push()`是先创建局部临时对象，再压入容器**
-### 删除
+### 删除（不包括forward_list)
 ```C
 c.pop_back()
 c.pop_front()
