@@ -165,6 +165,12 @@ fill_n(vec.begin(), vec.size()/2, 0); //将序列前一半设为0
 auto iter = copy(a.cbegin(), a.cend(), b.begin()); // 将a拷贝给b且返回第三个参数递增之后的值
 ```
 #### `replace()`（定义在algorithm头文件中）
+此算法接受4个参数：前两个是迭代器，表示输入序列，后两个一个是要搜索的值，另一个是新值
 ```C
-auto iter = copy(a.cbegin(), a.cend(), b.begin()); // 将a拷贝给b且返回第三个参数递增之后的值
+replace(a.begin(), a.end(), 0, 42); // 将a中0换成42
+```
+#### `replace_copy()`（定义在algorithm头文件中）
+此算法接受额外第三个迭代器参数，指出调整后序列的保存位置：
+```C
+replace(a.begin(), a.end(), 0, 42); // 将a中0换成42
 ```
