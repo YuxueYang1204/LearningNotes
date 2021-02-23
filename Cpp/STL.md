@@ -177,7 +177,7 @@ replace(a.begin(), a.end(), 0, 42); // 将a中0换成42
 replace_copy(a.cbegin(), a.cend(), b.begin(), 0, 42); // 将a中0换成42的序列存入b，a不变
 ```
   
-
+---
 ### 重排容器算法
 #### `sort()`（定义在algorithm头文件中）
 ```C
@@ -186,5 +186,5 @@ sort(a.begin(), a.end()); // 将a元素从小到大排序
 **注：需满足元素间可比**
 #### `unique()`（定义在algorithm头文件中）
 ```C
-sort(a.begin(), a.end()); // 将a元素从小到大排序
+unique(a.begin(), a.end()); // 将a中的重复元素放在最后
 ```
