@@ -135,4 +135,8 @@ int ia[] = {27, 10, 29};
 int val = 10;
 int *ptr = find(begin(ia), end(ia), val); // 找到就返回指针，找不到就返回end(ia)
 ```
-#### `find()`
+#### `accumulate()`（定义在numeric头文件中）
+```C
+int sum = accumulate(vec.cbegin(), vec.cend(), 0); // 第三个参数为初始值
+```
+
