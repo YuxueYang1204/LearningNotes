@@ -26,6 +26,7 @@ forward_list<string> words(articles.begin(), articles.end*());
 ```
 ### 下标访问
 遍历时下标访问采用`size_type i`而不是int
+下标访问操作只适用于string、vector、deque和array
 ### 迭代器
 迭代器运算
 ```C
