@@ -129,7 +129,7 @@ c.erase_after(b,e) // 删除b和e范围内的元素，返回最后一个被删�
 # 泛型算法
 ## 分类
 ### 只读算法
-#### `find()`
+#### `find()`（定义在numeric头文件中）
 ```C
 int ia[] = {27, 10, 29};
 int val = 10;
@@ -137,6 +137,12 @@ int *ptr = find(begin(ia), end(ia), val); // 找到就返回指针，找不到�
 ```
 #### `accumulate()`（定义在numeric头文件中）
 ```C
-int sum = accumulate(vec.cbegin(), vec.cend(), 0); // 第三个参数为初始值
+int sum1 = accumulate(vec.cbegin(), vec.cend(), 0); // 第三个参数为初始值
+string sum2 = accumulate(s.cbegin(), s.cend(), string("")); // ""为const char*类型，不可加，需要构造string
 ```
-
+求和需满足元素之间可加
+#### `equal()`
+```C
+int sum1 = accumulate(vec.cbegin(), vec.cend(), 0); // 第三个参数为初始值
+string sum2 = accumulate(s.cbegin(), s.cend(), string("")); // ""为const char*类型，不可加，需要构造string
+```
