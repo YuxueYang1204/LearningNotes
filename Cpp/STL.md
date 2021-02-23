@@ -65,10 +65,9 @@ swap(a, b);
 2. **string交换后迭代器、引用和指针失效**
 ### 添加
 ```C
-c.push_back(t)
-c.emplace_back(args)
-
-
+c.insert(p, t) 	   // 在迭代器p之前插入t或由args创建的元素
+c.emplace(p, args) // 返回新添加元素的迭代器
+c.insert(p, n, t) // 
 ---
 ## array
 ### 初始化
