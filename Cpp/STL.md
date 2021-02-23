@@ -8,9 +8,9 @@ vector<T> v2 = vl // 拷贝复制
 vector<T> v3(b, e) // 通过迭代器构造（array不支持）
 vector<T> v4 {a,b,c... }
 vector<T> v4 = {a,b,c...}
-// 以下两个视具体容器而定
+// 以下两个视具体容器而定，只适用于顺序容器（不包括array）
 vector<T> v5 (n, val) // n个val
-vector<T> v6 (n) // 构造n个元素，调用默认构造函数
+vector<T> v6 (n) // 构造n个元素，调用默认构造函数（string不适用）
 ```
 **注：如果列表初始化中提供的值无法用来初始化，就要考虑用该值构造vector对象**
 ```C
