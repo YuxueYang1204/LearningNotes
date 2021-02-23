@@ -63,7 +63,13 @@ swap(a, b);
 **注：**
 1. **除string外，交换后原来a的迭代器、引用和指针会指向b**
 2. **string交换后迭代器、引用和指针失效**
-### 
+### 添加
+```C
+c.push_back(t)
+c.emplace_back(args)
+
+
+---
 ## array
 ### 初始化
 需指定元素类型和大小
