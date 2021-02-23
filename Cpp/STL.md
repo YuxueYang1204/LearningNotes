@@ -191,3 +191,4 @@ vector<int> myvector = {10,20,20,20,30,30,20,20,10};
 auto it = unique (myvector.begin(), myvector.end()); // 10,20,30,20,10,?,?,?,?
 // it指向myvector[5]
 ```
+**注：因为只是去掉相邻重复元素，所以一般先sort再unique**
