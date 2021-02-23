@@ -45,5 +45,6 @@ iter1 != iter2
 ### 初始化
 需指定元素类型和大小
 ```C
-array<int, 42>
-array<string, 10>
+array<int, 42> a;
+array<string, 10> b;
+array<int, 10> c = {1, 2, 3, 4};
