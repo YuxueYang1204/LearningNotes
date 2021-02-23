@@ -48,7 +48,7 @@ iter1 != iter2
 array<int, 42> a;
 array<string, 10> b;
 array<int, 10> c = {1, 2, 3, 4}; // 列表初始化个数要小于等于设定长度
-array<int, 10> d = c; // 
+array<int, 10> d = c; // 只要元素类型和大小相等，可以拷贝
 ```
 ### 特点
 1. Sequence
