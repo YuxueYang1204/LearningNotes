@@ -157,6 +157,10 @@ pair<string, int> process(vector<string> &v){
 |value_type|set：和key_type等价<br>map：pair<**const** key_type, mapped_type>|
 ### 添加
 #### set
+```C
+（1）pair<iterator,bool> insert (const value_type& val);
+（2） iterator insert (const_iterator position, const value_type& val);
+```
 
 # 泛型算法
 ## 分类（常见算法举例）
