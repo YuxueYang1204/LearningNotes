@@ -168,8 +168,12 @@ pair<string, int> process(vector<string> &v){
 对（2）来说iterator要么指向插入新元素，要么指向set中已有的那个旧元素
 [set::insert](http://www.cplusplus.com/reference/set/set/insert/)
 #### map
+支持insert和emplace插入，方法与set类似
 [map::insert](http://www.cplusplus.com/reference/map/map/insert/)
 [map::emplace](http://www.cplusplus.com/reference/set/set/emplace/)
+#### multiset或multimap
+insert总能插入新元素，且只返回插入新元素的迭代器
+
 # 泛型算法
 ## 分类（常见算法举例）
 ### 只读算法
