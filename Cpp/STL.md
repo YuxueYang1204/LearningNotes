@@ -160,8 +160,13 @@ pair<string, int> process(vector<string> &v){
 ```C
 （1）pair<iterator,bool> insert (const value_type& val);
 （2）iterator insert (const_iterator position, const value_type& val);
+（3）template <class InputIterator>
+       void insert (InputIterator first, InputIterator last);
+（4）void insert (initializer_list<value_type> il);
 ```
-对（1）来说，pair::first要么指向插入新元素，要么指向set中已有的那个旧元素；插入成功pair::second为true
+对（1）来说，pair::first要么指向插入新元素，要么指向set中已有的那个旧元素；插入成功pair::second为true，否则为false  
+对（2）来说iterator要么指向插入新元素，要么指向set中已有的那个旧元素
+#### map
 # 泛型算法
 ## 分类（常见算法举例）
 ### 只读算法
