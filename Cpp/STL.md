@@ -129,6 +129,7 @@ c.erase_after(b,e) // 删除b和e范围内的元素，返回最后一个被删�
 # 关联容器
 ## pair
 定义在头文件utility中
+### 操作
 |操作|含义|
 |-|-|
 |`pair<T1, T2> p`|-|
@@ -144,9 +145,10 @@ pair<string, int> process(vector<string> &v){
 	return pair<string, int>();		// 返回空值
     else
 	return {v.back(), v.back().size()};	// 列表初始化构造
-	// 等价于 return make_pair(v.back(), v.ba
+	// 等价于 return make_pair(v.back(), v.back().size());
 }
 ```
+## 关联容器操作
 # 泛型算法
 ## 分类（常见算法举例）
 ### 只读算法
