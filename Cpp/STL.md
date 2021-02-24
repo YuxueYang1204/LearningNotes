@@ -176,7 +176,9 @@ insert总能插入新元素，且只返回插入新元素的迭代器
 [multiset](http://www.cplusplus.com/reference/set/multiset/)
 [multimap](http://www.cplusplus.com/reference/map/multimap/)
 ### 删除
-
+|函数|含义|返回值|
+|-|-|-|
+|c.erase(key)|从c中删除每个关键字为k的元素|
 # 泛型算法
 ## 分类（常见算法举例）
 ### 只读算法
