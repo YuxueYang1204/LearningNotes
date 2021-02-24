@@ -168,7 +168,8 @@ pair<string, int> process(vector<string> &v){
 对（2）来说iterator要么指向插入新元素，要么指向set中已有的那个旧元素
 [set::insert](http://www.cplusplus.com/reference/set/set/insert/)
 #### map
-支持insert和emplace插入，方法与set类似
+支持insert和emplace插入，方法与set类似  
+用下标操作可以将**不存在**的键-值对插入
 [map::insert](http://www.cplusplus.com/reference/map/map/insert/)
 [map::emplace](http://www.cplusplus.com/reference/set/set/emplace/)
 #### multiset或multimap
