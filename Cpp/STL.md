@@ -148,7 +148,13 @@ pair<string, int> process(vector<string> &v){
 	// 等价于 return make_pair(v.back(), v.back().size());
 }
 ```
-## 关联容器操作
+## 关联容器
+### 键-值类型
+|别名|含义|
+|-|-|
+|key_type|关键字类型|
+|mapped_type|仅适用于map：
+
 # 泛型算法
 ## 分类（常见算法举例）
 ### 只读算法
