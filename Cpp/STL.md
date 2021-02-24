@@ -139,8 +139,14 @@ c.erase_after(b,e) // 删除b和e范围内的元素，返回最后一个被删�
 |`p1 == p2`|first和second同时相等返回True|
 ### 创建pair对象的函数
 ```C
-pair<string, in> process(vector<string> &v){
-    
+pair<string, int> process(vector<string> &v){
+    if(v.empty())
+	return pair<string, int>();		// 返回空值
+    else
+	return {v.back(), v.back().size()};	// 列表初始化构造
+	// 等价于 return make_pair(v.back(), v.ba
+}
+```
 # 泛型算法
 ## 分类（常见算法举例）
 ### 只读算法
