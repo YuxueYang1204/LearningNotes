@@ -173,6 +173,9 @@ pair<string, int> process(vector<string> &v){
 [map::emplace](http://www.cplusplus.com/reference/set/set/emplace/)
 #### multiset或multimap
 insert总能插入新元素，且只返回插入新元素的迭代器
+[multiset](http://www.cplusplus.com/reference/set/multiset/)
+[multimap](http://www.cplusplus.com/reference/map/multimap/)
+### 删除
 
 # 泛型算法
 ## 分类（常见算法举例）
