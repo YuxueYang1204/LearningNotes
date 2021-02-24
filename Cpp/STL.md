@@ -155,7 +155,8 @@ pair<string, int> process(vector<string> &v){
 |key_type|关键字类型|
 |mapped_type|仅适用于map类：值类型|
 |value_type|set：和key_type等价<br>map：pair<**const** key_type, mapped_type>|
-### 迭代器
+### 添加
+#### set
 # 泛型算法
 ## 分类（常见算法举例）
 ### 只读算法
