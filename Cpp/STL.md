@@ -159,9 +159,9 @@ pair<string, int> process(vector<string> &v){
 #### set
 ```C
 （1）pair<iterator,bool> insert (const value_type& val);
-（2） iterator insert (const_iterator position, const value_type& val);
+（2）iterator insert (const_iterator position, const value_type& val);
 ```
-
+对（1）来说，pair::first要么指向插入新元素，要么指向set中已有的那个旧元素；插入成功pair::second为true
 # 泛型算法
 ## 分类（常见算法举例）
 ### 只读算法
